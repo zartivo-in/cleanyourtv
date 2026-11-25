@@ -35,7 +35,7 @@
     </string-array>
 
     <!-- The TV's Live TV / tuner app, offered at the end of the Inputs menu. Leave empty to omit. -->
-    <string name="live_tv_package" translatable="false">com.mediatek.wwtv.tvcenter</string>
+    <string name="live_tv_package" translatable="false">com.airtel.tv</string>
 
     <!-- Open the Live TV app above the first time Home comes up after the TV is switched on, for sets that are
          mostly used for broadcast TV. Once per boot: Home after that stays Home. Can also be set with
@@ -119,7 +119,7 @@
          own source picker instead, started by itself for every row, ahead of the standard way: for firmware that
          answers the channel URI with "unsupported" (Redmi X65, MiTV-NSOP0:
          com.xiaomi.mitv.tvplayer/.ExternalSourceActivity opens its HDMI 1 / HDMI 2 / AV overlay). Leave empty to omit. -->
-    <string name="input_action" translatable="false"></string>
+    <string name="input_action" translatable="true"></string>
     <!-- Inputs menu: a scheme to send the input's passthrough URI with instead of content:// (and no channel MIME
          type). YaOS: live-tv. Its source player answers live-tv://android.media.tv/passthrough/<input>, while the
          content:// URI goes to its channel player, which resumes the last film it played. Leave empty to omit. -->
@@ -214,7 +214,7 @@
          stock launcher is disabled even with InputKeyService on (Hisense huangshan, Android TV 10: no
          global_keys.xml, no vendor input picker). Off by default: a TV with its own input picker would otherwise
          get a chooser on every press. Also "handle_view_inputs": true in a theme's config.json. -->
-    <bool name="handle_view_inputs">false</bool>
+    <bool name="handle_view_inputs">true</bool>
     <!-- Remote buttons that open an app, as "keycode:package" or "KEYCODE_NAME:package" (INPUT_KEY_SERVICE=1 or
          HOME_KEY_SERVICE=1; both read this one list, and a theme's config.json can set it too). On Google TV the
          YouTube button sends 190 (KEYCODE_BUTTON_3) to the stock launcher, so it does nothing once launcherx
