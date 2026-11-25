@@ -877,8 +877,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         if (cfg.topMenu) {
             // One gear: Inputs and Wi-Fi move into its dropdown. The Wi-Fi pill stays hidden but keeps its
             // label up to date, which the menu's Wi-Fi row shows.
-            showInputsPill = false;
-            btnInputs.setVisibility(View.GONE);
+            showInputsPill = true;
+            btnInputs.setVisibility(View.VISIBLE);
             btnWifi.setVisibility(View.GONE);
             ((TextView) btnSettings).setText(R.string.settings);
             ((TextView) btnSettings).setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_settings, 0, 0, 0);
