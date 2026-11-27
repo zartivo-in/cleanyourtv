@@ -1,4 +1,4 @@
-name: Build Ad Blocking addon
+name: Build ad-blocker apk
 
 on:
   workflow_dispatch:
@@ -34,5 +34,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: CleanYourTV-AdBlocking
+          name: ad-blocker
           path: addons/ad-blocking/app/build/outputs/apk/debug/*.apk
